@@ -2,37 +2,129 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px auto;
+width: 80%;
+height: 60vh;
+border: 10px solid rgb(34, 80, 3);
+opacity: 0.7;
+}
+.container{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#textarea{
+  width: 70%;
+  height: 30px;
+  border: 2px solid rgb(80, 6, 6);
+  margin-top: 5px;
+  text-align: center;
+  font-size: large;
+  color: green;
+}
+li button{
+  width: 33px;
+  height: 27px;
+  color: red;
+  background-color: white;
+}
+ button{
+  width: 120px;
+  height: 40px;
+  color: green;
+  border: 2px solid rgb(80, 6, 6);
+  font-size: large;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+}
+.list{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto auto;
+  gap: 3px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 3px;
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  background-color: green;
+  color: rgb(245, 236, 236);
+  font-size: large;
+  font-weight: bolder;
+}
+.nav{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient( grey, green);
   color: white;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.nav h4{
+  font-size: 30px;
+  font-weight: bolder;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+ ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+ul li{
+  list-style-type: none;
+ margin-top: 10px;
+ font-size: large;
+ font-weight: bold;
+}
+li .link{
+  color: green;
+  text-decoration: none;
+}
+form{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+form input{
+  width: 80%;
+  height: 30px;
+  margin: 4px 0;
+}
+form select{
+  width: 50%;
+  height: 30px;
+}
+textarea{
+  width: 80%;
+  height: 30%;
+  margin: 5px 0;
+}
+form button{
+  margin: 10px 0;
 }
